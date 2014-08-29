@@ -58,6 +58,17 @@ Components.less
         display:none;
     }
 
+    .more-link {
+        font-weight:600;
+        color:@gray;
+        /*
+        color: black;
+        font-weight: 800;
+        letter-spacing: 2px;
+        padding: 0px 10px;
+        */  
+  }
+
 /* ---------------------------------------
 
     SIDEBAR
@@ -72,11 +83,43 @@ Components.less
         h1 {
             font-size:22px;
             margin-bottom:0.5em;
+            margin-top:0.5em;
         }
 
         p {
             font-size:12px;
+            font-weight:400;
             line-height:20px;
             color:@gray;
         }
+    }
+
+
+/* ---------------------------------------
+
+    SINGLE
+
+
+----------------------------------------*/
+
+    .single {
+
+        .post {
+
+            /* Increase spacing below post title */
+            header h1 {
+                margin-bottom:50px;
+            }
+
+            p { }
+
+            /* Post Aside (sidebar) */
+            aside {
+                header h1 {
+                    margin-bottom:0.5em;
+                }
+            }
+
+        }
+
     }
