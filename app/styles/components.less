@@ -1,7 +1,12 @@
 /* 
 
-Components.less
-@derrybirkett
+    Components.less
+    @derrybirkett
+
+    C O N T E N T S
+
+    010 GENERIC
+
 
 */
 
@@ -20,7 +25,23 @@ Components.less
 
     /* Wrapper for all content */
     .wrapper {
-        padding-top:150px;
+    }
+
+/* ---------------------------------------
+
+    020 IMAGES 
+        0210 Featured Image
+
+----------------------------------------*/
+
+    .featured-image {
+        min-height:150px;
+        width:100%;
+        margin:20px 0px;
+        
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center center;
     }
 
 /* ---------------------------------------
@@ -29,6 +50,15 @@ Components.less
 
 
 ----------------------------------------*/
+
+    .site-description {
+        .avatar { 
+            float:left; 
+            height:50px; width:50px;
+        }
+        h1, p { margin:0px;  }
+    }
+
 
     .avatar {
         height:80px;
@@ -123,3 +153,33 @@ Components.less
         }
 
     }
+
+
+
+
+/* ---------------------------------------
+
+    INDEX 
+    Tweaks to index layout
+
+----------------------------------------*/
+
+    .index {
+
+        /* Smaller headers */
+        .post { 
+            h1 {
+                font-size:38px; 
+            }
+            p {
+                font-size:16px;
+            }
+            .featured-image {
+                min-height:300px;
+            }
+        }
+
+    }
+
+
+

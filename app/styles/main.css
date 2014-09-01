@@ -6175,8 +6175,13 @@ button.close {
 /* My Stuff */
 /* 
 
-Components.less
-@derrybirkett
+    Components.less
+    @derrybirkett
+
+    C O N T E N T S
+
+    010 GENERIC
+
 
 */
 /* ---------------------------------------
@@ -6190,8 +6195,19 @@ body {
   padding: 30px;
 }
 /* Wrapper for all content */
-.wrapper {
-  padding-top: 150px;
+/* ---------------------------------------
+
+    020 IMAGES 
+        0210 Featured Image
+
+----------------------------------------*/
+.featured-image {
+  min-height: 150px;
+  width: 100%;
+  margin: 20px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /* ---------------------------------------
 
@@ -6199,6 +6215,15 @@ body {
 
 
 ----------------------------------------*/
+.site-description .avatar {
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+.site-description h1,
+.site-description p {
+  margin: 0px;
+}
 .avatar {
   height: 80px;
   width: 80px;
@@ -6270,6 +6295,24 @@ body {
 .single .post aside header h1 {
   margin-bottom: 0.5em;
 }
+/* ---------------------------------------
+
+    INDEX 
+    Tweaks to index layout
+
+----------------------------------------*/
+.index {
+  /* Smaller headers */
+}
+.index .post h1 {
+  font-size: 38px;
+}
+.index .post p {
+  font-size: 16px;
+}
+.index .post .featured-image {
+  min-height: 300px;
+}
 /*
 
 Typography
@@ -6279,6 +6322,9 @@ p {
   font-weight: 300;
   /* I want larger spaces between paragraphs */
   margin-bottom: 2em;
+}
+a {
+  color: #555555;
 }
 .smallcaps {
   text-transform: uppercase;
